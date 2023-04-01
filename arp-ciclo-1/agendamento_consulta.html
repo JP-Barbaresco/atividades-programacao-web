@@ -1,0 +1,52 @@
+<!-- 
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: João Pedro Camargo Silva Barbaresco 
+DATA: 28/03/2023  
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Consulta</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <nav class="cabecalho">
+        <ul class="menu">
+          <div class="item-menu"><a href="./cadastro_paciente.html">Cadastrar Paciente</a></div>
+          <div class="item-menu"><a href="./agendamento_consulta.html">Agendar Consulta</a></div>
+          <div class="item-menu"><a href="./consulta_paciente.html">Consultar Pacientes</a></div>
+          <div class="item-menu"><a href="./consulta_consultas.html">Relatório de Consultas</a></div>
+        </ul>
+      </nav>
+    </header>
+    <h1>Agendamento de Consulta</h1>
+    <div class="container">
+      <form class="questionario">
+        <label for="data_consulta">Data da Consulta:</label>
+        <input type="date" id="data_consulta" name="data_consulta"><br><br>
+        <label for="horario_consulta">Horário da Consulta:</label>
+        <input type="time" id="horario_consulta" name="horario_consulta"><br><br>
+        <label for="medico">Médico:</label>
+        <select id="medico" name="medico">
+          <option value="medico1">Médico 1</option>
+          <option value="medico2">Médico 2</option>
+          <option value="medico3">Médico 3</option>
+        </select><br><br>
+        <label for="tipo_consulta">Tipo de Consulta:</label>
+        <select id="tipo_consulta" name="tipo_consulta">
+          <option value="consulta1">Consulta 1</option>
+          <option value="consulta2">Consulta 2</option>
+          <option value="consulta3">Consulta 3</option>
+        </select><br><br>
+        <input type="submit" value="Agendar">
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

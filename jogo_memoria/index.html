@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Memory Game</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <div id="title">
+    <h1>Jogo da Memória</h1>
+  </div>
+
+  <section class="memory-game">
+    <div class="memory-card" data-framework="caraxes">
+      <img id="front-face" src="./images/Caraxes1.jpg" alt="Caraxes" />
+      <img id="back-face" src="./images/interrogacao.jpg" alt="Interrogação" />
+    </div>
+    <div class="memory-card" data-framework="caraxes">
+      <img id="front-face" src="./images/Caraxes1.jpg" alt="Caraxes" />
+      <img id="back-face" src="./images/interrogacao.jpg" alt="Interrogação" />
+    </div>
+
+    <div class="memory-card" data-framework="drogon">
+      <img id="front-face" src="./images/drogon.jpg" alt="Drogon" />
+      <img id="back-face" src="./images/interrogacao.jpg" alt="Interrogação" />
+    </div>
+    <div class="memory-card" data-framework="drogon">
+      <img id="front-face" src="./images/drogon.jpg" alt="Drogon" />
+      <img id="back-face" src="./images/interrogacao.jpg" alt="Interrogação" />
+    </div>
+
+    <div class="memory-card" data-framework="syrax">
+      <img id="front-face" src="./images/syrax1.jpg" alt="Syrax" />
+      <img id="back-face" src="./images/interrogacao.jpg" alt="Interrogação" />
+    </div>
+    <div class="memory-card" data-framework="syrax">
+      <img id="front-face" src="./images/syrax1.jpg" alt="Syrax" />
+      <img id="back-face" src="./images/interrogacao.jpg" alt="Interrogação" />
+    </div>
+
+    <div class="memory-card" data-framework="vermithor">
+      <img id="front-face" src="./images/vermithor.jpg" alt="Vermithor" />
+      <img id="back-face" src="./images/interrogacao.jpg" alt="Interrogação" />
+    </div>
+    <div class="memory-card" data-framework="vermithor">
+      <img id="front-face" src="./images/vermithor.jpg" alt="Vermithor" />
+      <img id="back-face" src="./images/interrogacao.jpg" alt="Interrogação" />
+    </div>
+
+    <div class="memory-card" data-framework="vhagar">
+      <img id="front-face" src="./images/Vhagar1.jpg" alt="Vhagar" />
+      <img id="back-face" src="./images/interrogacao.jpg" alt="Interrogação" />
+    </div>
+    <div class="memory-card" data-framework="vhagar">
+      <img id="front-face" src="./images/Vhagar1.jpg" alt="Vhagar" />
+      <img id="back-face" src="./images/interrogacao.jpg" alt="Interrogação" />
+    </div>
+
+  </section>
+  <div class="timer">
+    Tempo restante: <span id="countdown"></span>
+  </div>
+  <div class="results hidden">
+    <div class="message"></div>
+    <button class="restart">Reiniciar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

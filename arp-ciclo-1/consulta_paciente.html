@@ -1,0 +1,63 @@
+<!-- 
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: João Pedro Camargo Silva Barbaresco 
+DATA: 28/03/2023  
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Pacientes</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <nav class="cabecalho">
+        <ul class="menu">
+          <div class="item-menu"><a href="./cadastro_paciente.html">Cadastrar Paciente</a></div>
+          <div class="item-menu"><a href="./agendamento_consulta.html">Agendar Consulta</a></div>
+          <div class="item-menu"><a href="./consulta_paciente.html">Consultar Pacientes</a></div>
+          <div class="item-menu"><a href="./consulta_consultas.html">Relatório de Consultas</a></div>
+        </ul>
+      </nav>
+    </header>
+    <h1>Consulta de Pacientes</h1>
+    <form class="consulta">
+      <label for="busca">Buscar por nome ou CPF:</label>
+      <input type="text" id="busca" name="busca">
+      <input type="submit" value="Buscar"><br><br>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Data de Nascimento</th>
+          <th>CPF</th>
+          <th>Endereço</th>
+          <th>Telefone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Paciente 1</td>
+          <td>01/01/1990</td>
+          <td>111.111.111-11</td>
+          <td>Rua A, 123</td>
+          <td>(11) 1111-1111</td>
+        </tr>
+        <tr>
+          <td>Paciente 2</td>
+          <td>02/02/1990</td>
+          <td>222.222.222-22</td>
+          <td>Rua B, 456</td>
+          <td>(22) 2222-2222</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+  <script src="script.js"></script>
+</html>

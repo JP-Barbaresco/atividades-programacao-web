@@ -1,0 +1,45 @@
+<!-- 
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: João Pedro Camargo Silva Barbaresco 
+DATA: 28/03/2023  
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Paciente</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <nav class="cabecalho">
+        <ul class="menu">
+          <div class="item-menu"><a href="./cadastro_paciente.html">Cadastrar Paciente</a></div>
+          <div class="item-menu"><a href="./agendamento_consulta.html">Agendar Consulta</a></div>
+          <div class="item-menu"><a href="./consulta_paciente.html">Consultar Pacientes</a></div>
+          <div class="item-menu"><a href="./consulta_consultas.html">Relatório de Consultas</a></div>
+        </ul>
+      </nav>
+    </header>
+    <h1>Cadastro de Paciente</h1>
+    <div class="container">
+        <form class="questionario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento"><br><br>
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf"><br><br>
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco"><br><br>
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone"><br><br>
+        <input type="submit" value="Cadastrar">
+        </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
